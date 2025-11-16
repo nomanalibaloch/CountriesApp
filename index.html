@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+        <h1 class="title">Where in the world?</h1>
+        <p class="mode"><span class="icon"><i class="fa-solid fa-moon"></i></span> Dark Mode</p>
+    </header>
+    <main>
+      <div class="top-section">
+             <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="/" class="submit"><input type="text" placeholder="search for a country" id="search"></form>
+        </div>
+        <div class="filter">
+              <div class="filter-menu">
+                          <p class="filter-value">Filter by Region</p>
+                          <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            <div class="drop-down hidden" >
+          <ul id="regions">
+          <li value="Africa">Africa</li>
+          <li value="America">America</li>
+          <li value="Asia">Asia</li>
+          <li value="Europe">Europe</li>
+          <li value="Oceania">Oceania</li>
+        </ul>
+           </div>
+           </div>
+      </div>
+       <div class=main-section>
+      <div class="card hidden">
+        <img src="" class="flag">
+        <div class="info">
+          <h2>
+          </h2>
+          <p><b>Population: </b><span></span></p>
+          <p><b>Region: </b><span></span></p>
+          <p><b>Captial: </b><span></span></p>
+        </div>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>

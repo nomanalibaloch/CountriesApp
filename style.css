@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nunito", sans-serif;
+    color:hsl(0, 100%, 100%);
+    max-width: 700px;
+    margin: 0;
+    background-color:hsl(207, 26%, 17%);
+}
+header,.filter-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(209, 23%, 22%);
+}
+
+header{
+     
+     padding: 15px;
+}
+h1{
+    margin:0;
+    font-size: 20px;
+}
+h2{
+    font-size: 16px;
+}
+.mode{
+    font-size: 12px;
+}
+.search-bar{
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    background-color: hsl(209, 23%, 22%);
+    width: 60%;
+}
+#search{
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+#search::placeholder{
+    color:white;
+    opacity: 0.8;
+}
+.filter,.search-bar,ul{
+    padding: 15px 20px;  
+    border-radius: 5px;
+}
+.filter{
+    margin-top: 20px;
+    width: 60%;
+    cursor: pointer;
+    background-color: hsl(209, 23%, 22%);
+    
+}
+.filter p{
+    font-size: 12px;
+}
+ul{
+    appearance: none;
+    background-color: hsl(209, 23%, 22%);
+    width: 54.15%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 222px;
+    margin-top:5px;
+
+}
+ul li{
+    list-style: none;
+    width: 100%;
+    display: block;
+    font-size:12px;
+    margin-top:3px;
+    cursor: pointer;
+}
+p{
+    margin:0;
+    font-size: 12px;
+}
+main{
+    background-color: hsl(207, 26%, 17%);
+    padding: 15px;
+}
+.card{
+    width: 80%;
+    margin:0 auto;
+    margin-top: 25px;
+    max-width: 283px;
+}
+.card .flag{
+    width: 100%;
+    margin-bottom: -7px;
+}
+.info{
+    background-color:hsl(209, 23%, 22%);
+    padding: 20px;;
+}
+.info h2{
+    margin-top:10px;
+}
+.info p{
+    margin-top:5px;
+}
+.hidden{
+    display: none;
+}
+section{
+    padding: 25px;
+    width: 100%;
+    max-width: 700px;
+    margin:0 auto;
+}
+section img{
+    width: 100%;
+}
+.border-countries{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.border-countries h2{
+    width: 100%;
+}
+.btn{
+    margin-bottom: 20px;
+    padding: 8px 24px;
+    background-color: hsl(209, 23%, 22%);
+    border: none;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+}
+.country-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.p-detail{
+    margin-top:10px;
+}
+.technical-info{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.fa-arrow-left{
+    margin-right:5px;
+}
+@media(min-width:700px) {
+        .main-section{
+            display: flex;
+            flex-wrap: wrap;
+            gap:30px;
+            justify-content: space-between;
+        }
+        body{
+            max-width: 100%;
+        }
+        p{
+            font-size: 16px;
+        }
+        main{
+            padding: 30px;
+        }
+        .search-bar{
+            max-width: 30%;
+        }
+        header{
+            padding: 30px;
+        }
+        .top-section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .filter{
+            margin:0;
+            width: 30%;
+        }
+        .search-bar{
+            display: flex;
+            align-items: center;
+        }
+        input{
+            width: 100%;
+        }
+        .drop-down{
+            margin-top: 20px;
+        }
+        ul{
+            width: 100%;
+            position: relative;
+            padding: 0;
+        }
+        ul li{
+            font-size: 16px;
+            margin-top:6px;
+        }
+        section{
+            max-width: 100%;
+            padding: 30px;
+        }
+        .country-image,.detailed-info{
+            width: 45%;
+        }
+        .detailed-card-info{
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+        }
+        .technical-info{
+            margin:0;
+        }
+        .country-name{
+            font-size: 20px;
+        }
+        .fa-arrow-left{
+           margin-right:8px;
+        }
+
+
+}
